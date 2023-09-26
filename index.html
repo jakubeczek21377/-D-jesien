@@ -1,0 +1,133 @@
+
+
+<html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p><center-right><font color="red" size="6"</center><?p>
+
+
+
+
+<center>
+<footer>
+    <h1>Aktualna data i godzina:</h1>
+    <p id="czas"></p>
+</footer>
+
+<script>
+    // Funkcja do aktualizacji daty i godziny
+    function aktualizujDateIGodzine() {
+        var teraz = new Date(); // Pobierz aktualną datę i godzinę
+        var rok = teraz.getFullYear();
+        var miesiac = teraz.getMonth() + 1; // Dodaj 1, ponieważ miesiące są numerowane od 0
+        var dzien = teraz.getDate();
+        var godzina = teraz.getHours();
+        var minuta = teraz.getMinutes();
+        var sekunda = teraz.getSeconds();
+
+        // Formatuj datę i godzinę, dodając zero przed jednocyfrowymi liczbami
+        if (miesiac < 10) {
+            miesiac = "0" + miesiac;
+        }
+        if (dzien < 10) {
+            dzien = "0" + dzien;
+        }
+        if (godzina < 10) {
+            godzina = "0" + godzina;
+        }
+        if (minuta < 10) {
+            minuta = "0" + minuta;
+        }
+        if (sekunda < 10) {
+            sekunda = "0" + sekunda;
+        }
+
+        // Wyświetl datę i godzinę na stronie
+        document.getElementById("czas").textContent = rok + "-" + miesiac + "-" + dzien + " " + godzina + ":" + minuta + ":" + sekunda;
+    }
+
+    // Uruchom funkcję aktualizacji daty i godziny co sekundę
+    setInterval(aktualizujDateIGodzine, 1000);
+
+    // Wywołaj funkcję aktualizacji daty i godziny, aby wyświetlić je od razu
+    aktualizujDateIGodzine();
+</script>
+</center>
+
+
+<p><center>Jakub Twardziszewski</center></p>
+
+
+
+
+
+
+
+
+  
+<meta keywords="fajnie" content-type="bułka">
+</head>
+<font color="blue" size="6">
+<meta content-type="Bujam Torbe">
+<meta charset="UTF-8">
+<style>
+table tr, td, th{
+border-style: inset;
+border: 1px soild black;
+border: collapse: collapse;
+}
+</style>
+<body style="background-color: orange; color: orange"></body>
+
+
+<p><center><table width="100%" height="20%"></center></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<td rowspan=2">
+<img src="https://www.wroclaw.pl/beta2/files/news/326346/main/astronomiczna-jesien.jpg" alt="jesień" width="600" height="700" style="float:left">
+
+<img src="https://lh3.googleusercontent.com/drive-storage/AKHj6E7YkoolSkM68hCACaGmNqwwhF6FNj4Dx5Rr11Wa9-nzg1XXYoTWcLsGHHxOZFwJra63_EpNCTMyKGjYvWnNIGqj63UjcZyMQjbvMoVO=h360" alt="jesień" width="700" height="700" style="float:right">
+
+
+
+
+
+<center> <p> <a href="http://zsdios.pl/">Technikum</a></p>
+
+
+
+
+</html>
+
+
+
